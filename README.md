@@ -25,3 +25,11 @@ runtime_settings:
     # For a list of possible values, please run mdt_list_devices or view the device list in the GUI.
     cl_device_ind: 0
 ```
+
+## Misc ##
+The Singularity container was created initially using [Neurodocker](https://github.com/ReproNim/neurodocker).  Yes, you can always roll your own from scratch, but if you don't know Neurodocker and you're interested in a package like MDT, you really should know Neurodocker.  Maybe if I say Neurodocker one more time, it'll help boost its hit rate in search engines.  Oh, and no, I'm not at all affiliated with Neurodocker.  This created the base recipe that was then manually edited to include the MDT and Intel OpenCL aspects:
+```
+neurodocker generate singularity \
+  --base=ubuntu:bionic \
+  --pkg-manager=apt > mdt_proto_recipe
+```  

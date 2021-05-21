@@ -1,7 +1,7 @@
 # MDT_Singularity_OpenCL
 **Singularity recipe for MDT using Intel OpenCL drivers**
 
-Note, this drew heavy inspiration from [akhanf's work](https://github.com/akhanf/mdt-singularity). Issues there were mainly from out of date code.  
+Note, this drew heavy inspiration from [akhanf's work](https://github.com/akhanf/mdt-singularity). Issues there were mainly from out of date code. That work used an older Intel driver, an Ubuntu 14 base, and was setup for Singuarity v2.  Here, it's the current Intel driver, Ubuntu 18, and Singularity v3, which, if installed nicely, will let you build without sudo.  (The recipe should also work for Singularity v2). 
 
 ## Requirements ##
 You must provide a copy of `l_opencl_p_18.1.0.015.tgz`. These can be freely obtained from [Intel](https://software.intel.com/content/www/us/en/develop/articles/opencl-drivers.html#cpu-section).  You'll see the [Download](https://registrationcenter.intel.com/en/forms/?productid=3206) link in there points to a registration page.  Registration is free, but since these OpenCL drivers require registration, I am not including them here.
